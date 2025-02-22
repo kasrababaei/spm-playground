@@ -19,7 +19,7 @@ let package = Package(
                 "-warn-long-function-bodies=150",
                 "-Xfrontend",
                 "-warn-long-expression-type-checking=150",
-            ])//, .when(configuration: .debug)),
+            ], .when(configuration: .debug)),
         ]
     ),
     .testTarget(name: "SwiftPackageManagerPlayground-Tests", dependencies: ["SwiftPackageManagerPlayground"])
